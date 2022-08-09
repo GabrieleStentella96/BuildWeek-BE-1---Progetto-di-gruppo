@@ -20,7 +20,7 @@ public class Main {
 		utenti.save(utente4);
 		
 		Tessera tessera1 = new Tessera(LocalDate.now(), utente1);
-		TesseraDao tessere = new TesseraDao<Tessera>;
+		TesseraDao tessere = new TesseraDao(null);
 		
 
 	}
