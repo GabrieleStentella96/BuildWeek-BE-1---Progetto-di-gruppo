@@ -12,7 +12,7 @@ public class Bus extends MezzoTrasporto {
 
 	@Override
 	public String toString() {
-		return "Bus [isInservizio()=" + isInservizio() + ", getCapienza()=" + getCapienza() + ", toString()="
+		return "Bus [isInservizio()=" +  isInservizio() + ", getCapienza()=" + getCapienza() + ", toString()="
 				+ super.toString() + ", getClass()=" + getClass() + ", hashCode()=" + hashCode() + "]";
 	}
 
