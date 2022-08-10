@@ -2,6 +2,7 @@ package com.epicode.classiprogetto;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import javax.persistence.OneToOne;
 
 @Entity
 public class Utente {
@@ -11,7 +12,8 @@ public class Utente {
 	private int eta;
 @Id
 	private String codiceId;
-	
+@OneToOne
+	private Tessera tessera;
 	
 
 	public Utente() {
@@ -22,9 +24,18 @@ public class Utente {
 		this.cognome = cognome;
 		this.eta = eta;
 		this.codiceId = codiceId;
+		
 	}
 
 
+
+	public Tessera getTessera() {
+		return tessera;
+	}
+
+	public void setTessera(Tessera tessera) {
+		this.tessera = tessera;
+	}
 
 	public String getNome() {
 		return nome;
