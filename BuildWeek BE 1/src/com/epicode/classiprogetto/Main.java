@@ -13,15 +13,17 @@ public class Main {
 		Utente utente2 = new Utente("Florencia", "Perez", 38, "HHR1653");
 		Utente utente3 = new Utente("Scott", "Allen", 44, "HHR1933");
 		Utente utente4 = new Utente("Mario", "Micciche", 68, "HHR0193");
+		Utente utente5 = new Utente("Micheal", "Schubert", 31, "HHR1763");
 		UtenteDao utenti = new UtenteDao();
 		utenti.save(utente1);
 		utenti.save(utente2);
 		utenti.save(utente3);
 		utenti.save(utente4);
+		utenti.save(utente5);
 		
 		Tessera tessera1 = new Tessera(LocalDate.now(), utente1);
-		TesseraDao tessere = new TesseraDao<Tessera>;
-		
+		TesseraDao tessere = new TesseraDao(Tessera.class);
+		tessere.save(tessera1);
 
 	}
 
