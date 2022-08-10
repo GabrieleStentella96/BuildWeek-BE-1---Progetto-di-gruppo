@@ -1,6 +1,6 @@
 package com.epicode.classiprogetto;
 
-public class DistributoreAutomatico {
+public class DistributoreAutomatico implements InterRivenditori{
 	
 	private boolean attivo;
 
@@ -14,6 +14,18 @@ public class DistributoreAutomatico {
 
 	public void setAttivo(boolean attivo) {
 		this.attivo = attivo;
+	}
+
+	@Override
+	public void emissioneBiglietto() {
+		
+		
+	}
+
+	@Override
+	public void emissioneAbbonamento() {
+		
+		
 	}
 	
 	

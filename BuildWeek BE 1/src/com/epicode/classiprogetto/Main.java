@@ -26,10 +26,7 @@ public class Main {
 //		utenti.save(utente2);
 //		utenti.save(utente3);
 //		utenti.save(utente4);
-		
-		Tessera tessera1 = new Tessera(LocalDate.now(), utente1);
-		TesseraDao tessere = new TesseraDao(Tessera.class);
-		tessere.save(tessera1);
+	
 		
 		
 
